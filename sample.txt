@@ -1,0 +1,3 @@
+Artificial Intelligence (AI) is the simulation of human intelligence in machines.
+AI is used in healthcare, finance, education, transportation, and many other industries.
+Machine Learning is a subset of AI that enables computers to learn from data.
