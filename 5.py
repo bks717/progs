@@ -1,6 +1,7 @@
 #pip -q install gensim
 
 import gensim.downloader as api
+import random
 
 # Load model
 wv = api.load("glove-wiki-gigaword-50")
@@ -11,6 +12,9 @@ seed = input("Enter a seed word: ")
 try:
     sw = [w for w, _ in wv.most_similar(seed, topn=5)]
     print("Similar words:", sw)
+
+    # Shuffle the similar words so paragraph uses random words each run
+    random.shuffle(sw)
 
     # Paragraph using given templates
     para = " ".join([
