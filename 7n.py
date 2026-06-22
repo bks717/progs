@@ -8,10 +8,21 @@ from sumy.summarizers.luhn      import LuhnSummarizer       # → Creative
 from sumy.summarizers.lsa       import LsaSummarizer        # → Structured
 from sumy.summarizers.text_rank import TextRankSummarizer   # → Diverse
 
-text = """The Industrial Revolution took place from the 18th to 19th centuries.
-It marked a shift from agrarian rural societies to industrial urban ones.
-The steam engine, iron and textile industries played central roles.
-It improved living standards for some but caused grim conditions for the poor."""
+text = """The Industrial Revolution, which took place from the 18th to the 19th centuries, 
+was a period during which predominantly agrarian, 
+rural societies in Europe and America became industrial and urban.
+
+Prior to the Industrial Revolution, manufacturing was often 
+done in people's homes, using hand tools or basic machines. 
+Industrialization marked a shift to powered, special-purpose machinery, factories and mass production. 
+
+The iron and textile industries, along with the development of the steam engine, 
+played central roles in the Industrial Revolution, which also saw improved systems of transportation, communication and banking. 
+
+While industrialization brought about an increased 
+volume and variety of manufactured goods and an improved standard of living for some, 
+it also resulted in often grim employment and living conditions 
+for the poor and working classes."""
 
 parser = PlaintextParser.from_string(text, Tokenizer("english"))
 
